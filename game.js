@@ -240,7 +240,7 @@ function main() {
 	renderEnities(arrowsMobs);
 	renderEnities(mobs);
 	renderEnities(arrayMapEnity);
-	renderScore();
+	
 	//renderWTF(); //debug
 	
 	if(player.length == 0) {
@@ -251,8 +251,10 @@ function main() {
 		//what is a button input?
 		setupHandle(dt);
 		renderEnities(player[0]);
-		
 	}
+
+	renderScore();
+
 	//Artificial Intelligence
 	AIorders(dt, now);
 	
